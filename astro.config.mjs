@@ -1,4 +1,13 @@
-import { defineConfig } from "astro/config";
+import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
-export default defineConfig({});
+// CONF WITHOUT REAL DOMAIN
+export default defineConfig({
+  site: 'https://python-spain.github.io',
+  base: '/2026.es.pycon.org',
+});
+
+//CONFIG WITH REAL DOMAIN
+// export default defineConfig({
+//   site: 'https://2026.es.pycon.org',
+//   base: '/',
+// });
