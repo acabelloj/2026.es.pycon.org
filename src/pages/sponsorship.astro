@@ -1,0 +1,301 @@
+---
+import '@fontsource-variable/jetbrains-mono'
+import { SPONSORS_EMAIL, SPONSORS_SUBJECT } from './constants'
+
+const packages = [
+  { name: 'Principal', price: '15.000€', color: '#facc15' },
+  { name: 'Platino', price: '8.000€', color: '#e2e8f0' },
+  { name: 'Oro', price: '5.000€', color: '#fbbf24' },
+  { name: 'Plata', price: '2.500€', color: '#94a3b8' },
+  { name: 'Bronce', price: '1.000€', color: '#d97706' },
+]
+
+const packageBenefits = [
+  { benefit: 'Logo en web', values: ['XXL', 'XL', 'L', 'M', 'S'] },
+  { benefit: 'Entradas incluidas', values: ['10', '6', '4', '2', '1'] },
+  { benefit: 'Stand', values: ['Premium', 'Grande', 'Estándar', 'Pequeño', '—'] },
+  { benefit: 'Charla patrocinada', values: ['30 min', '15 min', '5 min', '—', '—'] },
+  { benefit: 'Logo en camisetas', values: ['✓', '✓', '—', '—', '—'] },
+  { benefit: 'Mención en redes', values: ['✓✓✓', '✓✓', '✓', '✓', '✓'] },
+  { benefit: 'Logo en cartelería', values: ['✓', '✓', '✓', '✓', '—'] },
+  { benefit: 'Material en bolsa', values: ['✓', '✓', '✓', '✓', '✓'] },
+  { benefit: 'Acceso a CVs*', values: ['✓', '✓', '✓', '—', '—'] },
+  { benefit: 'Naming del evento', values: ['✓', '—', '—', '—', '—'] },
+]
+
+const addons = [
+  { name: 'Café', description: 'Patrocina las pausas de café con tu branding', price: '3.000€' },
+  { name: 'Lanyard', description: 'Tu logo en las acreditaciones de todos los asistentes', price: '2.000€' },
+  { name: 'Grabación', description: 'Patrocina la grabación y difusión de las charlas', price: '3.500€' },
+  { name: 'Fiesta', description: 'Patrocina el evento social del sábado noche', price: '4.000€' },
+  { name: 'Guardería', description: 'Patrocina el servicio de guardería del evento', price: '1.500€' },
+  { name: 'Diversidad', description: 'Becas de diversidad e inclusión', price: '2.000€' },
+  { name: 'PyDay', description: 'Patrocina el día de talleres (viernes)', price: '2.500€' },
+]
+
+const pastSponsors = ['Bloomberg', 'Cívica', 'PSF', 'JetBrains', 'Kaleidos', 'Telefónica', 'Holaluz', 'Alea Soluciones', 'Intelygenz', 'Nazaríes', 'Apsl', 'Sngular']
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patrocinio - PyConES 2026</title>
+  <meta name="description" content="Oportunidades de patrocinio para PyConES 2026 en Barcelona">
+  <link rel="icon" type="image/svg+xml" href="/2026.es.pycon.org/favicon.svg">
+</head>
+<body style="margin: 0; padding: 0; background: #0f172a; color: #e2e8f0; font-family: 'JetBrains Mono Variable', ui-monospace, monospace; font-size: 16px; line-height: 1.8;">
+
+  <div style="max-width: 960px; margin: 0 auto; padding: 60px 40px;">
+
+    <p style="margin: 0 0 40px 0;">
+      <a href="/" style="color: #4ade80; text-decoration: none;">← Volver al inicio</a>
+    </p>
+
+    <h1 style="font-size: 42px; font-weight: 700; color: #fff; margin: 0 0 10px 0; line-height: 1.2;">
+      Oportunidades de Patrocinio
+    </h1>
+
+    <p style="font-size: 20px; color: #4ade80; margin: 0 0 60px 0;">
+      PyConES 2026 · Barcelona · 6-8 noviembre
+    </p>
+
+    <p style="margin: 0 0 20px 0;">
+      <strong style="color: #fff;">PyConES en números:</strong> +800 asistentes · +80 ponentes · 3 días · 12 ediciones
+    </p>
+
+    <h2 style="font-size: 28px; font-weight: 700; color: #fff; margin: 60px 0 20px 0; padding-bottom: 10px; border-bottom: 2px solid #334155;">
+      ¿Qué es PyConES?
+    </h2>
+
+    <p style="margin: 0 0 20px 0;">
+      PyConES es la <strong style="color: #fff;">conferencia nacional de Python más importante de España</strong>, organizada por Python España. Desde 2013, reunimos a la comunidad Python hispanohablante para compartir conocimiento, experiencias y crear conexiones profesionales.
+    </p>
+
+    <h2 style="font-size: 28px; font-weight: 700; color: #fff; margin: 60px 0 20px 0; padding-bottom: 10px; border-bottom: 2px solid #334155;">
+      Sede y programa
+    </h2>
+
+    <p style="margin: 0 0 20px 0;">
+      La PyConES 2026 se celebrará en el histórico edificio de la <strong style="color: #fff;">Universitat de Barcelona</strong>, en el corazón de la ciudad condal.
+    </p>
+
+    <p style="margin: 0 0 10px 0; color: #4ade80; font-weight: 700;">Programa:</p>
+
+    <ul style="margin: 0 0 20px 0; padding-left: 30px;">
+      <li style="margin-bottom: 10px;"><strong style="color: #fff;">Viernes 6 Nov:</strong> Talleres y workshops</li>
+      <li style="margin-bottom: 10px;"><strong style="color: #fff;">Sábado 7 Nov:</strong> Conferencias principales + Networking</li>
+      <li style="margin-bottom: 10px;"><strong style="color: #fff;">Domingo 8 Nov:</strong> Conferencias + Clausura</li>
+    </ul>
+
+    <h2 style="font-size: 28px; font-weight: 700; color: #fff; margin: 60px 0 20px 0; padding-bottom: 10px; border-bottom: 2px solid #334155;">
+      ¿Por qué patrocinar?
+    </h2>
+
+    <p style="margin: 0 0 20px 0;">
+      Patrocinar PyConES te permite alcanzar tus objetivos de negocio:
+    </p>
+
+    <ul style="margin: 0 0 20px 0; padding-left: 30px;">
+      <li style="margin-bottom: 10px;"><strong style="color: #fff;">Conectar con talento técnico:</strong> Acceso directo a desarrolladores Python, ingenieros de datos y especialistas en IA/ML que buscan nuevas oportunidades.</li>
+      <li style="margin-bottom: 10px;"><strong style="color: #fff;">Aumentar visibilidad de marca:</strong> Tu empresa como referente tecnológico ante la mayor comunidad Python de España.</li>
+      <li style="margin-bottom: 10px;"><strong style="color: #fff;">Networking estratégico:</strong> Relaciones con CTOs, Tech Leads y decisores técnicos de empresas innovadoras.</li>
+      <li style="margin-bottom: 10px;"><strong style="color: #fff;">Recruiting:</strong> Encuentra el mejor talento Python en un solo evento.</li>
+    </ul>
+
+    <h2 style="font-size: 28px; font-weight: 700; color: #fff; margin: 60px 0 20px 0; padding-bottom: 10px; border-bottom: 2px solid #334155;">
+      Perfil de asistentes
+    </h2>
+
+    <p style="margin: 0 0 10px 0; color: #4ade80; font-weight: 700;">Nivel de experiencia:</p>
+
+    <ul style="margin: 0 0 20px 0; padding-left: 30px;">
+      <li style="margin-bottom: 8px;">Senior (5+ años): <strong style="color: #fff;">45%</strong></li>
+      <li style="margin-bottom: 8px;">Mid-level (2-5 años): <strong style="color: #fff;">35%</strong></li>
+      <li style="margin-bottom: 8px;">Junior (&lt;2 años): <strong style="color: #fff;">15%</strong></li>
+      <li style="margin-bottom: 8px;">Estudiantes: <strong style="color: #fff;">5%</strong></li>
+    </ul>
+
+    <p style="margin: 0 0 10px 0; color: #4ade80; font-weight: 700;">Áreas de interés:</p>
+
+    <ul style="margin: 0 0 20px 0; padding-left: 30px;">
+      <li style="margin-bottom: 8px;">Web Development: <strong style="color: #fff;">60%</strong></li>
+      <li style="margin-bottom: 8px;">Data Science / ML: <strong style="color: #fff;">55%</strong></li>
+      <li style="margin-bottom: 8px;">DevOps / Cloud: <strong style="color: #fff;">40%</strong></li>
+      <li style="margin-bottom: 8px;">Automation / Scripting: <strong style="color: #fff;">35%</strong></li>
+    </ul>
+
+    <p style="margin: 0 0 20px 0;">
+      <strong style="color: #fff;">Datos demográficos:</strong> Edad media 32 años · 70% empleados · 20% freelancers · Asistentes de +15 países
+    </p>
+
+    <h2 style="font-size: 28px; font-weight: 700; color: #fff; margin: 60px 0 20px 0; padding-bottom: 10px; border-bottom: 2px solid #334155;">
+      Lo que dicen de nosotros
+    </h2>
+
+    <blockquote style="margin: 0 0 30px 0; padding: 0 0 0 20px; border-left: 4px solid #4ade80; font-style: italic;">
+      <p style="margin: 0 0 10px 0;">"PyConES es el evento de referencia para la comunidad Python en España. La calidad de las charlas y el networking que se genera es incomparable."</p>
+      <p style="margin: 0; color: #4ade80; font-style: normal;">— Antoni Aloy, Python España</p>
+    </blockquote>
+
+    <blockquote style="margin: 0 0 30px 0; padding: 0 0 0 20px; border-left: 4px solid #4ade80; font-style: italic;">
+      <p style="margin: 0 0 10px 0;">"Un evento imprescindible para cualquier profesional de Python. La diversidad de temas y la pasión de la comunidad hacen de PyConES una experiencia única."</p>
+      <p style="margin: 0; color: #4ade80; font-style: normal;">— Nerea Luis, IA Research</p>
+    </blockquote>
+
+    <h2 style="font-size: 28px; font-weight: 700; color: #fff; margin: 60px 0 20px 0; padding-bottom: 10px; border-bottom: 2px solid #334155;">
+      Nos han apoyado
+    </h2>
+
+    <p style="margin: 0 0 20px 0;">
+      {pastSponsors.join(' · ')}
+    </p>
+
+    <h2 style="font-size: 28px; font-weight: 700; color: #fff; margin: 60px 0 20px 0; padding-bottom: 10px; border-bottom: 2px solid #334155;">
+      Paquetes de patrocinio
+    </h2>
+
+    <div style="overflow-x: auto; margin: 0 0 20px 0;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+        <thead>
+          <tr>
+            <th style="border: 1px solid #334155; padding: 12px; text-align: left; background: #1e293b; color: #94a3b8;">Beneficio</th>
+            {packages.map(p => (
+              <th style={`border: 1px solid #334155; padding: 12px; text-align: center; background: #1e293b; color: ${p.color};`}>{p.name}<br/><span style="font-size: 12px;">{p.price}</span></th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {packageBenefits.map(row => (
+            <tr>
+              <td style="border: 1px solid #334155; padding: 12px;">{row.benefit}</td>
+              {row.values.map(v => (
+                <td style={`border: 1px solid #334155; padding: 12px; text-align: center; color: ${v !== '—' ? '#4ade80' : '#64748b'};`}>{v}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin: 0 0 20px 0; font-size: 14px; color: #64748b;">
+      * Previa autorización de los asistentes según RGPD
+    </p>
+
+    <h2 style="font-size: 28px; font-weight: 700; color: #fff; margin: 60px 0 20px 0; padding-bottom: 10px; border-bottom: 2px solid #334155;">
+      Detalles de los paquetes
+    </h2>
+
+    <h3 style="font-size: 20px; font-weight: 700; color: #facc15; margin: 30px 0 15px 0;">Principal — 15.000€</h3>
+    <ul style="margin: 0 0 20px 0; padding-left: 30px;">
+      <li style="margin-bottom: 8px;">Naming del evento: "PyConES 2026 presentado por [Tu Empresa]"</li>
+      <li style="margin-bottom: 8px;">Logo en posición preferente en toda la comunicación</li>
+      <li style="margin-bottom: 8px;">Stand premium en zona de mayor tráfico</li>
+      <li style="margin-bottom: 8px;">Charla de 30 minutos en track principal</li>
+      <li style="margin-bottom: 8px;">10 entradas para tu equipo</li>
+      <li style="margin-bottom: 8px;">Agradecimiento especial en apertura y cierre</li>
+    </ul>
+
+    <h3 style="font-size: 20px; font-weight: 700; color: #e2e8f0; margin: 30px 0 15px 0;">Platino — 8.000€</h3>
+    <ul style="margin: 0 0 20px 0; padding-left: 30px;">
+      <li style="margin-bottom: 8px;">Logo grande en web y materiales</li>
+      <li style="margin-bottom: 8px;">Stand de tamaño grande</li>
+      <li style="margin-bottom: 8px;">Charla de 15 minutos</li>
+      <li style="margin-bottom: 8px;">Logo en camisetas oficiales</li>
+      <li style="margin-bottom: 8px;">6 entradas para tu equipo</li>
+    </ul>
+
+    <h3 style="font-size: 20px; font-weight: 700; color: #fbbf24; margin: 30px 0 15px 0;">Oro — 5.000€</h3>
+    <ul style="margin: 0 0 20px 0; padding-left: 30px;">
+      <li style="margin-bottom: 8px;">Logo mediano en web y materiales</li>
+      <li style="margin-bottom: 8px;">Stand estándar</li>
+      <li style="margin-bottom: 8px;">Presentación de 5 minutos</li>
+      <li style="margin-bottom: 8px;">4 entradas para tu equipo</li>
+    </ul>
+
+    <h3 style="font-size: 20px; font-weight: 700; color: #94a3b8; margin: 30px 0 15px 0;">Plata — 2.500€</h3>
+    <ul style="margin: 0 0 20px 0; padding-left: 30px;">
+      <li style="margin-bottom: 8px;">Logo en web</li>
+      <li style="margin-bottom: 8px;">Stand pequeño</li>
+      <li style="margin-bottom: 8px;">2 entradas para tu equipo</li>
+    </ul>
+
+    <h3 style="font-size: 20px; font-weight: 700; color: #d97706; margin: 30px 0 15px 0;">Bronce — 1.000€</h3>
+    <ul style="margin: 0 0 20px 0; padding-left: 30px;">
+      <li style="margin-bottom: 8px;">Logo en web</li>
+      <li style="margin-bottom: 8px;">1 entrada para tu equipo</li>
+      <li style="margin-bottom: 8px;">Mención en redes sociales</li>
+    </ul>
+
+    <h2 style="font-size: 28px; font-weight: 700; color: #fff; margin: 60px 0 20px 0; padding-bottom: 10px; border-bottom: 2px solid #334155;">
+      Patrocinios adicionales
+    </h2>
+
+    <div style="overflow-x: auto; margin: 0 0 20px 0;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+        <thead>
+          <tr>
+            <th style="border: 1px solid #334155; padding: 12px; text-align: left; background: #1e293b; color: #94a3b8;">Patrocinio</th>
+            <th style="border: 1px solid #334155; padding: 12px; text-align: left; background: #1e293b; color: #94a3b8;">Descripción</th>
+            <th style="border: 1px solid #334155; padding: 12px; text-align: right; background: #1e293b; color: #94a3b8;">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          {addons.map(a => (
+            <tr>
+              <td style="border: 1px solid #334155; padding: 12px; color: #4ade80; font-weight: 700;">{a.name}</td>
+              <td style="border: 1px solid #334155; padding: 12px;">{a.description}</td>
+              <td style="border: 1px solid #334155; padding: 12px; text-align: right;">{a.price}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <h2 style="font-size: 28px; font-weight: 700; color: #fff; margin: 60px 0 20px 0; padding-bottom: 10px; border-bottom: 2px solid #334155;">
+      Sobre Python España
+    </h2>
+
+    <p style="margin: 0 0 20px 0;">
+      Python España es una <strong style="color: #fff;">asociación sin ánimo de lucro</strong> cuyo objetivo es promover el uso del lenguaje de programación Python en España, así como servir de punto de encuentro para los interesados en dicho lenguaje.
+    </p>
+
+    <p style="margin: 0 0 20px 0;">
+      Desde 2013 organizamos PyConES. También apoyamos grupos locales, organizamos Django Girls, PyLadies y otros eventos que fomentan la diversidad e inclusión en tecnología. Somos <strong style="color: #fff;">100% voluntarios</strong>.
+    </p>
+
+    <div style="margin: 60px 0; padding: 40px; border: 2px solid #4ade80; border-radius: 8px; text-align: center; background: #1e293b;">
+      <h2 style="font-size: 28px; font-weight: 700; color: #fff; margin: 0 0 15px 0; border: none; padding: 0;">¿Listo para patrocinar?</h2>
+      <p style="margin: 0 0 20px 0;">Contáctanos para discutir cómo podemos crear un paquete que se ajuste a tus objetivos.</p>
+      <p style="margin: 0;">
+        <a href={`mailto:${SPONSORS_EMAIL}?subject=${encodeURIComponent(SPONSORS_SUBJECT)}`} style="display: inline-block; background: #4ade80; color: #000; font-weight: 700; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-size: 16px;">CONTACTAR</a>
+      </p>
+      <p style="margin: 20px 0 0 0; color: #94a3b8; font-size: 14px;">{SPONSORS_EMAIL}</p>
+    </div>
+
+    <h2 style="font-size: 28px; font-weight: 700; color: #fff; margin: 60px 0 20px 0; padding-bottom: 10px; border-bottom: 2px solid #334155;">
+      Ediciones anteriores
+    </h2>
+
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 0 0 40px 0;">
+      {[1,2,3,4,5,6,7,8].map(i => (
+        <div style="aspect-ratio: 16/9; background: #1e293b; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #64748b;">[Foto {i}]</div>
+      ))}
+    </div>
+
+    <footer style="margin-top: 60px; padding-top: 30px; border-top: 1px solid #334155; text-align: center; color: #64748b; font-size: 14px;">
+      <p style="margin: 0 0 15px 0;">
+        <a href="#" style="color: #64748b; text-decoration: none; margin: 0 15px;">Bluesky</a>
+        <a href="#" style="color: #64748b; text-decoration: none; margin: 0 15px;">GitHub</a>
+        <a href="#" style="color: #64748b; text-decoration: none; margin: 0 15px;">Mastodon</a>
+        <a href="#" style="color: #64748b; text-decoration: none; margin: 0 15px;">LinkedIn</a>
+        <a href="#" style="color: #64748b; text-decoration: none; margin: 0 15px;">Instagram</a>
+      </p>
+      <p style="margin: 0;">© 2026 Python España</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
